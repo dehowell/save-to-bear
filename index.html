@@ -1,8 +1,13 @@
 <html>
 <head>
   <title>Bookmarklet: Save to Bear</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/skeleton/2.0.4/css/skeleton.css"/>
 </head>
 <body>
-  <a id="bookmarklet" href="javascript:(function saveToBear(){var bearUrl='bear://x-callback-url/grab-url?url='+encodeURIComponent(window.location);window.location.href=bearUrl})();">Save to Bear</a>
+  <div class="container">
+    <p>To install the 'Save to Bear' bookmarklet, drag this button to your browser's bookmarks toolbar.</p>
+
+    <a class="button button-primary" href="javascript:(function saveToBear(){var bearUrl='bear://x-callback-url/grab-url?url='+encodeURIComponent(window.location);window.location.href=bearUrl})();">Save to Bear</a>
+  </div>
 </body>
 </html>
